@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің сүйікті фильмдерім</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="home">
+    <nav class="navbar">
+        <a href="#home" class="logo">Kino<span>Әлем</span></a>
+
+        <div class="nav-links">
+            <a href="#home">Басты бет</a>
+            <a href="#about">Жоба туралы</a>
+            <a href="#movies">Фильмдер</a>
+            <a href="#favorites">Таңдаулылар</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">MY MOVIE COLLECTION</p>
+            <h1>Менің сүйікті<br><span>фильмдерім</span></h1>
+            <p>Әр фильм — жаңа әлем, ерекше оқиға және ұмытылмас әсер.</p>
+            <a href="#movies" class="main-button">Фильмдерді көру</a>
+        </div>
+    </section>
+</header>
+
+<main>
+
+    <section id="about" class="about section">
+        <p class="small-title">ЖОБА ТУРАЛЫ</p>
+        <h2>Кино — ерекше әлем</h2>
+        <p>
+            Бұл веб-сайт менің сүйікті фильмдеріме арналған.
+            Мұнда әртүрлі жанрдағы фильмдермен танысуға,
+            фильмдерді іздеуге және ұнағандарын таңдаулыларға
+            қосуға болады.
+        </p>
+    </section>
+
+    <section id="movies" class="movies section">
+        <p class="small-title">ФИЛЬМДЕР ТОПТАМАСЫ</p>
+        <h2>Менің сүйікті фильмдерім</h2>
+        <p class="subtitle">Өзіңе ұнайтын фильмді таңда.</p>
+
+        <div class="controls">
+            <input
+                type="search"
+                id="search"
+                placeholder="Фильм атауын іздеу..."
+                aria-label="Фильм іздеу"
+            >
+
+            <select id="genreFilter" aria-label="Жанрды таңдау">
+                <option value="all">Барлық жанр</option>
+                <option value="Анимация">Анимация</option>
+                <option value="Фэнтези">Фэнтези</option>
+                <option value="Шытырман оқиға">Шытырман оқиға</option>
+            </select>
+        </div>
+
+        <div class="movie-grid" id="movieGrid">
+
+            <article class="movie-card" data-name="Как приручить дракона" data-genre="Анимация">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg"
+                    alt="Как приручить дракона постері"
+                >
+                <div class="movie-info">
+                    <span class="movie-genre">Анимация · 2010</span>
+                    <h3>Как приручить дракона</h3>
+                    <p>Иккинг пен айдаһар Тістісіздің ерекше достығы.</p>
+                    <button class="favorite" type="button" aria-pressed="false">♡ Таңдаулыға қосу</button>
+                </div>
+            </article>
+
+            <article class="movie-card" data-name="Чарли и шоколадная фабрика" data-genre="Фэнтези">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/iKP6wg3c6COUe8gYutoGG7qcPnO.jpg"
+                    alt="Чарли и шоколадная фабрика постері"
+                >
+                <div class="movie-info">
+                    <span class="movie-genre">Фэнтези · 2005</span>
+                    <h3>Чарли и шоколадная фабрика</h3>
+                    <p>Ғажайып шоколад фабрикасындағы қызықты оқиғалар.</p>
+                    <button class="favorite" type="button" aria-pressed="false">♡ Таңдаулыға қосу</button>
+                </div>
+            </article>
+
+            <article class="movie-card" data-name="Человек-паук" data-genre="Шытырман оқиға">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg"
+                    alt="Человек-паук: Через вселенные постері"
+                >
+                <div class="movie-info">
+                    <span class="movie-genre">Шытырман оқиға · 2018</span>
+                    <h3>Человек-паук</h3>
+                    <p>Майлз Моралес және оның таңғажайып әлемі.</p>
+                    <button class="favorite" type="button" aria-pressed="false">♡ Таңдаулыға қосу</button>
+                </div>
+            </article>
+
+            <article class="movie-card" data-name="Рататуй" data-genre="Анимация">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+                    alt="Рататуй мультфильмінің постері"
+                >
+                <div class="movie-info">
+                    <span class="movie-genre">Анимация · 2007</span>
+                    <h3>Рататуй</h3>
+                    <p>Парижде аспаз болуды армандайтын Реми туралы оқиға.</p>
+                    <button class="favorite" type="button" aria-pressed="false">♡ Таңдаулыға қосу</button>
+                </div>
+            </article>
+
+            <article class="movie-card" data-name="Тайна Коко" data-genre="Анимация">
+                <img
+                    src="https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg"
+                    alt="Тайна Коко мультфильмінің постері"
+                >
+                <div class="movie-info">
+                    <span class="movie-genre">Анимация · 2017</span>
+                    <h3>Тайна Коко</h3>
+                    <p>Мигельдің музыка, арман және отбасы туралы оқиғасы.</p>
+                    <button class="favorite" type="button" aria-pressed="false">♡ Таңдаулыға қосу</button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>Бұл фильм табылмады.</p>
+    </section>
+
+    <section id="favorites" class="favorites section">
+        <p class="small-title">СЕНІҢ ЖЕКЕ ТІЗІМІҢ</p>
+        <h2>Таңдаулыларым</h2>
+        <div id="favoriteList">
+            <p>Әзірге фильм таңдалмады.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <a href="#home" class="logo">Kino<span>Әлем</span></a>
+    <p>Менің сүйікті фильмдерім</p>
+    <p>Оқу жобасы · HTML · CSS · JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
